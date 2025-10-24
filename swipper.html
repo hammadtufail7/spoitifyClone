@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper Playlist</title>
+
+  <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <style>
+    .swiper {
+      width: 90%;
+      max-width: 1000px;
+      height: 350px;
+      margin: 50px auto;
+    }
+
+    .swiper-slide {
+      background: #007aff;
+      color: #fff;
+      border-radius: 12px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #007aff;
+    }
+  </style>
+</head>
+<body>
+  <div class="swiper">
+    <div class="playlist swiper-wrapper">
+      <div class="card swiper-slide">
+        <img src="gallery/pic1.jfif" />
+        <p>Song 1</p>
+      </div>
+      <div class="card swiper-slide">
+        <img src="gallery/pic1.jfif" />
+        <p>Song 2</p>
+      </div>
+      <div class="card swiper-slide">
+        <img src="gallery/pic1.jfif" />
+        <p>Song 3</p>
+      </div>
+      <div class="card swiper-slide">
+        <img src="gallery/pic1.jfif" />
+        <p>Song 4</p>
+      </div>
+      <div class="card swiper-slide">
+        <img src="gallery/pic1.jfif" />
+        <p>Song 5</p>
+      </div>
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".swiper", {
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
