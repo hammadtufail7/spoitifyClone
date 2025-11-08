@@ -1,0 +1,20 @@
+{
+  "songs": [
+    {
+      "name": "Let Me",
+      "artist": "Zayn Malik",
+      "cover" : "Zayn Malik"
+      
+    },
+    {
+      "name": "Perfect",
+      "artist": "Ed Sheeran",
+      "cover" : "Zayn Malik"
+    },
+    {
+      "name": "Blinding Lights",
+      "artist": "The Weeknd",
+      "cover" : "Zayn Malik"
+    }
+  ]
+}

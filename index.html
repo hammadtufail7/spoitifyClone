@@ -7,8 +7,6 @@
     <title>Sptoify</title>
     <link rel="stylesheet" href="swiper-bundle.min.css">
     <link rel="stylesheet" href="sptoify_clone.css">
-    <link rel="stylesheet" href="utilityCss.css">
-
 
 </head>
 
@@ -79,37 +77,74 @@
         <!-- container div contains two column right window and left window -->
         <!-- start of left window div  -->
         <div class="left_w">
-            <!-- left window contain two divs head and data  -->
+            <!-- left window contain two divs head and data first part -->
+            <div class="part1">
+                <div class="head">
+                    <!-- head div contins button and heading of library -->
+                    <a href="#" class="library_field">
+                        <img src="svg/library.svg" alt="" class="invert library_icon">
+                        <span class="library_text">Your Library</span>
+                    </a>
+                    <div class="create">
+                        <button class="btn">
+                            <img src="svg/plus.svg" alt="" class="invert plus_icon">
+                            <span>Create</span>
 
-            <div class="head">
-                <!-- head div contins button and heading of library -->
-                <a href="#" class="library_field">
-                    <img src="svg/library.svg" alt="" class="invert library_icon">
-                    <span class="library_text">Your Library</span>
-                </a>
-                <div class="">
-                    <button class="btn">
-                        <img src="svg/plus.svg" alt="" class="invert plus_icon">
-                        <span>Create</span>
-
-                    </button>
+                        </button>
+                    </div>
+                    <!-- end of head div  -->
                 </div>
-                <!-- end of head div  -->
+
+                <div class="data">
+                    <!-- data div contain information about playlist -->
+                    <h3>Create your first playlist</h3>
+                    <div class="song_list">
+                        <ul></ul>
+                    </div>
+
+                    <p>it's easy,we'll help you</p>
+                    <button class="data_btn">Create playlist</button>
+                </div>
+                <div class="data">
+                    <h3>Let's find some podcasts to follow</h3>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button class="data_btn">Browse podcasts</button>
+                </div>
+            </div>
+            <!-- end of left window div first part -->
+
+            <!-- start of left window div second part -->
+            <!-- <div class="part2">
+                <div class="playBox">
+                    <span><img src="/gallery/musicLogo.png" id="info"></span>
+                    <div class="artist_info info">
+                        <p>Artist</p>
+                        <p>Song Name</p>
+                    </div>
+                </div>
+            </div> -->
+            <!-- end of left window div second part -->
+
+            <div class="part3">
+                <div class="one">
+                    <ul>
+                        <li>SR NO.</li>
+                        <li>SONG NAME</li>
+                        <li>SINGER</li>
+                    </ul>
+                </div>
+                <div class="two">
+                    <!-- <ul class="list">
+                        <li class="list_play">
+                            <button><img src="svg/play.svg" class="invert"></button>
+                        </li>
+                        <li class="Song_name">Dusk Till Dawn</li>
+                        <li class="Singer">Zayn Malik</li>
+                    </ul> -->
+                </div>
+
             </div>
 
-            <div class="data">
-                <!-- data div contain information about playlist -->
-                <h3>Create your first playlist</h3>
-                <p>it's easy,we'll help you</p>
-                <button class="data_btn">Create playlist</button>
-            </div>
-            <div class="data">
-                <h3>Let's find some podcasts to follow</h3>
-                <p>We'll keep you updated on new episodes</p>
-                <button class="data_btn">Browse podcasts</button>
-            </div>
-
-            <!-- end of left window div  -->
         </div>
         <!-- start of line div  -->
 
@@ -141,9 +176,9 @@
                 </div>
                 <!-- first swiper -->
                 <div class="swiper">
-                    <div class="playlist swiper-wrapper">
-                        <div class="card swiper-slide ">
-                            <img src="gallery/pics2.jfif" />
+                    <div class="playlist swiper-wrapper playlist1">
+                        <!-- <div class="card swiper-slide ">
+                            <img src="gallery/pics2.jfif">
                             <div class="play">
                                 <button>
                                     <img src="svg/play.svg" class="">
@@ -151,120 +186,30 @@
                             </div>
                             <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
 
-                        </div>
-                        <div class="card swiper-slide">
-                            <img src="gallery/pics2.jfif" />
-                            <div class="play">
-                                <button>
-                                    <img src="svg/play.svg" class="">
-                                </button>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
-                        </div>
-                        <div class="card swiper-slide">
-                            <img src="gallery/pics2.jfif" />
-                            <div class="play">
-                                <button>
-                                    <img src="svg/play.svg" class="">
-                                </button>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
-                        </div>
-                        <div class="card swiper-slide">
-                            <img src="gallery/pics2.jfif" />
-                            <div class="play">
-                                <button>
-                                    <img src="svg/play.svg" class="">
-                                </button>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
-                        </div>
-                        <div class="card swiper-slide">
-                            <img src="gallery/pics2.jfif" />
-                            <div class="play">
-                                <button>
-                                    <img src="svg/play.svg" class="">
-                                </button>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
-                        </div>
-                        <div class="card swiper-slide">
-                            <img src="gallery/pics2.jfif" />
-                            <div class="play">
-                                <button>
-                                    <img src="svg/play.svg" class="">
-                                </button>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
-                        </div>
+                        </div> -->
+
                     </div>
                     <div class="swiper-button-next swiper-btn "></div>
                     <div class="swiper-button-prev swiper-btn"></div>
                 </div>
+
                 <!-- second swiper -->
-                <div class="pf_header">
-                    <h2>Featured Charts</h2>
+                <div class="pf_header ">
+                    <h2>Artist Songs</h2>
                     <p>Show all</p>
                 </div>
 
                 <div class="swiper">
-                    <div class="playlist swiper-wrapper">
-                        <div class="card swiper-slide ">
+                    <div class="playlist swiper-wrapper pl_album">
+                        <!-- <div class="card swiper-slide pl_cards">
                             <img src="gallery/pic1.jfif" />
-                            <div class="play">
-                                <button>
-                                    <img src="svg/play.svg" class="">
-                                </button>
-                            </div>
                             <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
 
-                        </div>
-                        <div class="card swiper-slide">
-                            <img src="gallery/pic1.jfif" />
-                            <div class="play">
-                                <button>
-                                    <img src="svg/play.svg" class="">
-                                </button>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
-                        </div>
-                        <div class="card swiper-slide">
-                            <img src="gallery/pic1.jfif" />
-                            <div class="play">
-                                <button>
-                                    <img src="svg/play.svg" class="">
-                                </button>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
-                        </div>
-                        <div class="card swiper-slide">
-                            <img src="gallery/pic1.jfif" />
-                            <div class="play">
-                                <button>
-                                    <img src="svg/play.svg" class="">
-                                </button>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
-                        </div>
-                        <div class="card swiper-slide">
-                            <img src="gallery/pic1.jfif" />
-                            <div class="play">
-                                <button>
-                                    <img src="svg/play.svg" class="">
-                                </button>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
-                        </div>
-                        <div class="card swiper-slide">
-                            <img src="gallery/pic1.jfif" />
-                            <div class="play">
-                                <button>
-                                    <img src="svg/play.svg" class="">
-                                </button>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
-                        </div>
+                        </div> -->
+
                     </div>
+
+
                     <div class="swiper-button-next swiper-btn "></div>
                     <div class="swiper-button-prev swiper-btn"></div>
                 </div>
@@ -284,54 +229,11 @@
                                     <img src="svg/play.svg" class="">
                                 </button>
                             </div>
-                            <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
+                            <p>${artist_name}</p>
+                            <p>${song_name}</p>
 
                         </div>
-                        <div class="card swiper-slide">
-                            <img src="gallery/pics3.jfif" />
-                            <div class="play">
-                                <button>
-                                    <img src="svg/play.svg" class="">
-                                </button>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
-                        </div>
-                        <div class="card swiper-slide">
-                            <img src="gallery/pics3.jfif" />
-                            <div class="play">
-                                <button>
-                                    <img src="svg/play.svg" class="">
-                                </button>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
-                        </div>
-                        <div class="card swiper-slide">
-                            <img src="gallery/pics3.jfif" />
-                            <div class="play">
-                                <button>
-                                    <img src="svg/play.svg" class="">
-                                </button>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
-                        </div>
-                        <div class="card swiper-slide">
-                            <img src="gallery/pics3.jfif" />
-                            <div class="play">
-                                <button>
-                                    <img src="svg/play.svg" class="">
-                                </button>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
-                        </div>
-                        <div class="card swiper-slide">
-                            <img src="gallery/pics3.jfif" />
-                            <div class="play">
-                                <button>
-                                    <img src="svg/play.svg" class="">
-                                </button>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
-                        </div>
+                        
                     </div>
                     <div class="swiper-button-next swiper-btn "></div>
                     <div class="swiper-button-prev swiper-btn"></div>
@@ -379,7 +281,7 @@
                                     <li>Import your music</li>
                                 </ul>
                             </div>
-                        
+
 
                             <div class="row">
                                 <h4>Spotify Plans</h4>
@@ -391,19 +293,19 @@
                                     <li>Spotify Free</li>
                                 </ul>
                             </div>
-                        <!-- end of wrapper first part-->
+                            <!-- end of wrapper first part-->
                         </div>
                         <!-- start of social link second part-->
                         <div class="social">
-                                <ul class="social_links">
-                                    <li><span><img src="svg/facebook.svg" class="invert"></span></li>
-                                    <li><span><img src="svg/twitter.svg" class="invert"></span></li>
-                                    <li><span><img src="svg/intsa.svg" class="invert"></span></li>
-                                </ul>
-                         <!-- start of social link second part-->
+                            <ul class="social_links">
+                                <li><span><img src="svg/facebook.svg" class="invert"></span></li>
+                                <li><span><img src="svg/twitter.svg" class="invert"></span></li>
+                                <li><span><img src="svg/intsa.svg" class="invert"></span></li>
+                            </ul>
+                            <!-- start of social link second part-->
                         </div>
-                        
-                    <!-- end of divider div -->
+
+                        <!-- end of divider div -->
                     </div>
 
 
@@ -424,26 +326,41 @@
                     </div>
                 </footer>
 
-            <!-- end of footer in right window -->
+                <!-- end of footer in right window -->
             </div>
-        <!-- end of right window div  -->
+            <!-- end of right window div  -->
         </div>
-    <!-- end of container -->
+        <!-- end of container -->
     </div>
     <!-- start of playlist bar -->
     <div class="playbar">
-         <div class="Buttons">
-            <button class="backward_btn"><img src="svg/backSong.svg" class="invert"></button>
-            <button class="Song_play"><img src="svg/playS.svg" class="invert"></button>
-            <button class="forward_btn"><img src="svg/forwardS.svg" class="invert"></button>
-         </div>   
-         <div class="bar-items">
-            <span>0:00</span>
-            <input type="range" id="progressBar" value="0">
-            <span>3:00</span>
+        <div class="bar1">
 
-            <audio src="media/song1.mpeg" controls></audio>
-         </div>
+            <span><img src="/gallery/musicLogo.png" id="Thumbnail_bar"></span>
+            <div class="artist_info information">
+                <p>Artist</p>
+                <p>Song Name</p>
+            </div>
+
+
+        </div>
+        <div class="bar2">
+            <div class="Buttons">
+                <button class="backward_btn"><img src="svg/backSong.svg" class="invert"></button>
+                <button class="Song_play"><img src="svg/pause.svg" class="invert" id="playBtn"></button>
+                <button class="forward_btn"><img src="svg/forwardS.svg" class="invert"></button>
+            </div>
+            <div class="bar-items">
+                <span id="currentTime">00:00</span>
+                <div id="progressBar">
+                    <div class="circle"></div>
+                </div>
+                <span id="EndTime">03:00</span>
+            </div>
+        </div>
+        <div class="bar3">
+            adfasdf
+        </div>
     </div>
 
     <!-- Swiper JS -->
@@ -452,24 +369,8 @@
 
 
 
+
 </body>
 
 </html>
 
-// <!-- <div class="play">
-//     playbutton
-//                            <button>
-//                                  <img src="svg/play.svg" class="">
-//                            </button> 
-<div class="card swiper-slide">
-                            <img src="gallery/pic1.jfif" class="">
-                            <div class="play">
-                                <button>
-                                    <img src="svg/play.svg" class="">
-                                </button>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet sit amet sit amet.</p>
-
-                        </div>
-
-// </div> -->
