@@ -829,7 +829,7 @@ hr {
     text-align: center;
     gap: 15px;
     width: 20%;
-    
+
 }
 
 .bar1 span {
@@ -918,8 +918,7 @@ hr {
 }
 
 #progressBar {
-    -webkit-appearance: none;
-    width: 300px;
+    width: 400px;
     height: 3px;
     background-color: #3d3d3d;
     position: relative;

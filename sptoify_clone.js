@@ -19,7 +19,7 @@ var swiper = new Swiper(".swiper", {
 // function to get a Album
 async function getAlbum() {
 
-  let album_fetch = await fetch("http://127.0.0.1:5500/media/Album/")
+  let album_fetch = await fetch("/media/Album/")
   let response = await album_fetch.text()
   // console.log(response);
   let div = document.createElement("div")
@@ -46,7 +46,7 @@ async function getAlbum() {
 async function getAlbumSong(folder) {
   // console.log(folder);
 
-  let al_SongFetch = await fetch(`http://127.0.0.1:5500/media/Album/${folder}/`)
+  let al_SongFetch = await fetch(`/media/Album/${folder}/`)
   let response = await al_SongFetch.text()
   // console.log(response);
 
@@ -77,7 +77,7 @@ async function getAlbumSong(folder) {
 // function to get a song
 async function getSongs() {
 
-  let songs_fetch = await fetch("http://127.0.0.1:5500/media/zayn/")
+  let songs_fetch = await fetch("/media/zayn/")
   let response = await songs_fetch.text()
   // console.log(response);
 
